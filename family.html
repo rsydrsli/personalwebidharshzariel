@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet My Family</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body, html {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+            color: #333;
+        }
+
+        header {
+            background-color: #007399;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .center-content {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #007399;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .content-item:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .content-item:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .content-item:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .content-icon {
+            font-size: 2.5em;
+            color: #007399;
+            flex-shrink: 0;
+        }
+
+        .content-text h3 {
+            margin: 0 0 10px 0;
+            color: #007399;
+            font-size: 1.4em;
+        }
+
+        .content-text p {
+            margin: 5px 0;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .back-button {
+            display: inline-block;
+            font-size: 1em;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007399;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            width: 100px;
+            margin: auto;
+        }
+
+        .back-button:hover {
+            background-color: #005f73;
+        }
+
+        footer {
+            background-color: #007399;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meet My Family</h1>
+    <p>"Family is where life begins and love never ends."</p>
+</header>
+
+<div class="center-content">
+
+    <!-- Parents -->
+    <div class="content-item">
+        <i class="fas fa-user-friends content-icon"></i>
+        <div class="content-text">
+            <h3>Parents</h3>
+            <p><strong>FATHER:</strong> ISMAIL BIN ARIFFIN</p>
+            <p><strong>MOTHER:</strong> ZAINUN BINTI ABDULLAH</p>
+        </div>
+    </div>
+
+    <!-- Siblings -->
+    <div class="content-item">
+        <i class="fas fa-users content-icon"></i>
+        <div class="content-text">
+            <h3>Siblings</h3>
+            <p><strong>IZEIR:</strong> 33 years old</p>
+            <p><strong>IZZUL:</strong> 30 years old</p>
+            <p><strong>IDHAM:</strong> 27 years old</p>
+            <p><strong>IZZWA:</strong> 22 years old</p>
+			<p><strong>IDHAR:</strong> 20 years old</p>
+        </div>
+    </div>
+
+    <!-- Family Values -->
+    <div class="content-item">
+        <i class="fas fa-heart content-icon"></i>
+        <div class="content-text">
+            <h3>Family Values</h3>
+            <p>We value kindness, hard work, and staying united through every challenge. Family is the backbone of who we are.</p>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">Back</a>
+
+</div>
+
+<footer>
+    <p>&copy; Idhar. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Added FontAwesome icons -->
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General Styles */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #004d66;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Center Content */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Experience Box */
+        .experience-box {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button {
+            display: inline-block;
+            font-size: 1.2em;
+            padding: 12px 24px;
+            margin-top: 20px;
+            color: white;
+            background-color: #007399;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #005f73;
+        }
+
+        /* Experience Section */
+        .experience {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+
+        /* Skills Section */
+        .skills {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skills-item {
+            width: calc(33.33% - 20px);
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-item h3 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+
+        /* Goals Section */
+        .goals {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #004d66;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>My Experience</h1>
+        <p>My journey and achievements throughout my internship.</p>
+    </header>
+
+    <!-- SECTION 1: Work Experience -->
+    <section class="experience">
+        <div class="container">
+            <h2><i class="fas fa-briefcase icon"></i>Work Experience & Internship</h2>
+            <hr>
+            <div class="experience-item">
+                <h3>Zurith Safety Services Sdn Bhd</h3>
+                <p><strong>Position:</strong> Corporate Management Department</p>
+                <p><strong>Dates:</strong> 22 July 2024 – 13 September 2024</p>
+                <p><strong>Responsibilities:</strong> Handling tasks related to corporate management and HR. Assisting with project management, tender evaluation, and preparing related documentation.</p>
+                <p><strong>Achievements:</strong> Successfully secured tenders from various agencies and improved operational efficiency in the corporate department.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: Skills & Additional Achievements -->
+    <section class="skills">
+        <div class="container">
+            <h2><i class="fas fa-cogs icon"></i>Skills & Additional Achievements</h2>
+            <hr>
+            <div class="skills-list">
+                <div class="skills-item">
+                    <h3>Project Management</h3>
+                    <p>Led several projects in the Corporate Management Department focused on improving systems and work efficiency.</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Communication</h3>
+                    <p>Improved communication skills through interactions with external parties and preparing clear, accurate reports.</p>
+                </div>
+                <div class="skills-item">
+                    <h3>Problem-Solving</h3>
+                    <p>Successfully addressed operational issues by finding effective solutions to increase productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: Goals and Aspirations -->
+    <section class="goals">
+        <div class="container">
+            <h2><i class="fas fa-bullseye icon"></i>My Goals and Aspirations</h2>
+            <hr>
+            <p>I aspire to continue growing in the field of management and safety, with a focus on honing my skills in strategic planning and risk management. I aim to make a positive impact in every project I undertake throughout my career journey.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; Idhar. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

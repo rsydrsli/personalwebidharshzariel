@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idhar Homepage</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        header {
+            background: linear-gradient(90deg, #004d66, #007399);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .profile-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #007399;
+            transition: transform 0.3s;
+        }
+
+        .profile:hover {
+            transform: scale(1.1);
+        }
+
+        .animated-text {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .animated-text p {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #004d66;
+            animation: slide 3s ease-out;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .nav-button {
+            font-size: 1.2em;
+            padding: 15px;
+            color: white;
+            background-color: #007399;
+            border: none;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-button:hover {
+            background-color: #005f73;
+            transform: scale(1.1);
+        }
+
+        .nav-button.elipse {
+            border-radius: 50%;
+            width: 150px;
+            height: 90px;
+        }
+
+        .nav-button.parallelogram {
+            background-color: #007399;
+            width: 160px;
+            height: 90px;
+            transform: skew(-20deg);
+        }
+
+        .about-me {
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-me h2 {
+            color: #004d66;
+        }
+
+        .about-me p {
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #004d66;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: #00b8d4;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007399;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #005f73;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav-button {
+                width: 120px;
+                height: 80px;
+                font-size: 1em;
+            }
+
+            .nav-button i {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">Home</a>
+
+    <header>
+        <h1>Welcome to Idhar's Homepage</h1>
+        <p>Explore my life and work through the sections below.</p>
+    </header>
+
+    <div class="profile-img">
+        <img src="homepage.jpg" alt="Idhar's Profile" class="profile">
+    </div>
+
+    <div class="animated-text">
+        <p>Welcome to my personal page. Let's explore together!</p>
+    </div>
+
+    <div class="center-content">
+        <a href="biodata.html" class="nav-button elipse">
+            <span>Biodata</span>
+        </a>
+        <a href="experience.html" class="nav-button parallelogram">
+            <span>Experience</span>
+        </a>
+        <a href="family.html" class="nav-button elipse">
+            <span>Family</span>
+        </a>
+        <a href="gallery.html" class="nav-button parallelogram">
+            <span>Gallery</span>
+        </a>
+    </div>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer who enjoys creating interactive and visually appealing websites. Let's connect!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Idhar. All rights reserved.</p>
+        <p>Follow me on <a href="https://www.linkedin.com/in/idhar-shazriel-590294275/" target="_blank">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
